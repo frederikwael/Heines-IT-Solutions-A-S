@@ -1,0 +1,56 @@
+<Window x:Class="WpfApp.BingoBoardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Bankoplade Generator" 
+        Height="700" 
+        Width="700"
+        Background="#AED6F1">
+    
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock 
+            Text="FREDAGSBANKO" 
+            FontSize="30"
+            FontWeight="Light"
+            HorizontalAlignment="Center" 
+            Margin="0,10,0,20" 
+            Grid.Row="0" />
+        
+        <Button 
+            Content="Generer Bankoplade" 
+           FontStyle="Italic" 
+            Click="GenerateBingoBoard" 
+            Width="200" Height="40" 
+            HorizontalAlignment="Center" 
+            Margin="0,10" 
+            Grid.Row="1" />
+
+        <UniformGrid 
+            Rows="3" 
+            Columns="9" 
+            Grid.Row="2" 
+            Name="BingoGrid" 
+            Margin="10,62,10,92" 
+            Background="#2E86C1" />
+        
+
+        <Button 
+            Content="Tilbage til hovedmenu" 
+            FontStyle="Italic"
+            Click="BackToMainMenu" 
+            Width="200" 
+            Height="40" 
+            HorizontalAlignment="Center" 
+            Margin="0,10" 
+            Grid.Row="3" 
+            />
+        
+        
+    </Grid>
+</Window>

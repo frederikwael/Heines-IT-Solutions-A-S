@@ -1,0 +1,55 @@
+<Window 
+    x:Class="WpfApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Hovedmenu" 
+    Height="700" 
+    Width="700"
+    Background="#AED6F1">
+    <StackPanel 
+        HorizontalAlignment="Center" 
+        VerticalAlignment="Center" 
+        Height="720" 
+        Width="640"
+        Background="#AED6F1">
+
+        <Image 
+    Height="432" 
+    Width="520"
+    Source="C:\Users\Bruger\OneDrive\Skrivebord\Github repository\AfsluttendeGF1Projekt\WpfApp\Indenfor HeinesIT.jpg"
+    />
+
+        <TextBlock 
+            Text="HOVEDMENU" 
+            FontWeight="Light"
+            FontSize="30"
+            FontFamily="Bold"
+            HorizontalAlignment="Center" 
+            Margin="0,0,0,10" />
+
+        <Button 
+            Content="Medarbejderlog" 
+            FontSize="20"
+            FontStyle="Italic"
+            Click="OpenEmployeeInfoWindow" 
+            Width="250" 
+            Height="40" 
+            />
+        <Button 
+            Content="FredagsBanko"
+            FontSize="20"
+            FontStyle="Italic"
+            Click="OpenBingoBoardWindow" 
+            Width="250" 
+            Height="40" 
+            Margin="0,10" />
+
+        <Button 
+            Content="Log ud"
+            Click="Button_Click"
+            Height="30"
+            Width="70"
+            HorizontalAlignment="Right"
+            Margin="2, 5"/>
+    </StackPanel>
+</Window>

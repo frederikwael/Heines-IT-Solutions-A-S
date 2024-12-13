@@ -1,0 +1,53 @@
+<Application 
+    x:Class="WpfApp.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PrimaryColor">#2E86C1</Color>
+            <Color x:Key="SecondaryColor">#AED6F1</Color>
+            <Color x:Key="TextColor">#FFFFFF</Color>
+            
+            <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource PrimaryColor}" />
+            <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource SecondaryColor}" />
+            <SolidColorBrush x:Key="TextBrush" Color="{StaticResource TextColor}"/>
+
+            <Style TargetType="TextBlock">
+                <Setter 
+                    Property="FontFamily" 
+                    Value="Segoe UI" />
+                <Setter 
+                    Property="Foreground" 
+                    Value="{StaticResource TextBrush}" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter 
+                    Property="FontFamily" 
+                    Value="Segoe UI" />
+                <Setter 
+                    Property="FontSize" 
+                    Value="14" />
+                <Setter 
+                    Property="Background" 
+                    Value="{StaticResource PrimaryBrush}" />
+                <Setter 
+                    Property="Foreground" 
+                    Value="{StaticResource TextBrush}" />
+                <Setter 
+                    Property="Padding" 
+                    Value="10,5" />
+                <Setter 
+                    Property="Margin"
+                    Value="5" />
+                <Setter Property="BorderBrush" Value="{StaticResource SecondaryBrush}" />
+                <Setter Property="BorderThickness" Value="1" />
+            </Style>
+
+            <Style TargetType="Window">
+                <Setter Property="FontFamily" Value="Segoe UI" />
+                <Setter Property="Background" Value="{StaticResource SecondaryBrush}" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
